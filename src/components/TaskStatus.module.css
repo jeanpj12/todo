@@ -1,0 +1,64 @@
+
+.addTask {
+  display: grid;
+  grid-template-columns: 1fr 9rem;
+  gap: .8rem;
+  width: 73.6rem;
+  height: 5.4rem;
+  position: absolute;
+  top: -9rem;
+}
+
+.addTask input {
+  border-radius: 8px;
+  border: none;
+  padding: 1.6rem;
+  background-color: var(--grey-500);
+  color: var(--grey-200);
+}
+
+.addTask button {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: .8rem;
+  padding: 1.6rem;
+  background-color: var(--blue);
+  color: var(--grey-100);
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color .1s;
+}
+
+.addTask button:hover {
+  background-color: var(--blue-dark);
+}
+
+.addTask button:focus {
+  outline: solid 1px var(--grey-100);
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.totalTasks{
+  color: var(--blue);
+}
+
+.doneTasks {
+  color: var(--purple);
+}
+
+strong span {
+  color: var(--grey-200);
+  background-color: var(--grey-400);
+  padding: .2rem .8rem;
+  border-radius: 6px;
+  margin-left: .8rem;
+}

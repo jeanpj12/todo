@@ -1,0 +1,80 @@
+.task {
+  width: 100%;
+  background-color: var(--grey-500);
+  border: 1px solid var(--grey-400);
+  border-radius: 8px;
+  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: 2.4rem 1fr 2.4rem;
+  gap: 1.6rem;
+  justify-content: flex-start;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 2.4rem;
+  padding: .5rem;
+  transition: color .2s;
+}
+
+button:focus {
+  border-radius: 4px;
+}
+
+.trash:hover {
+  color: var(--danger);
+}
+
+button.checker{
+  color: var(--blue);
+  transition: color .2s;
+}
+
+button.checker:hover{
+  color: var(--blue-dark);
+}
+
+button.checked {
+  color: var(--purple);
+  transition: color .2s;
+}
+
+button.checked:hover {
+  color: var(--purple-dark);
+}
+
+button i.iconChecker, button i.iconChecked  {
+  display: none;
+}
+
+button.checker i.iconChecker{
+  display: flex;
+}
+
+button.checked i.iconChecked{
+  display: flex;
+}
+
+.trash {
+  border-radius: 8px;
+  color: var(--grey-300);
+  transition: color .2s, background-color .2s;
+}
+
+.trash:hover {
+  color: var(--danger);
+  background-color: var(--grey-400);
+}
+
+.trash i{
+  margin-block: auto;
+}
+
+.textChecked {
+  text-decoration: line-through;
+}
